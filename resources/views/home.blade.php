@@ -8,6 +8,7 @@ home
 @section('yeld1')
 <h1>
     HOMEPAGE
+    @dump($trains)
 </h1>
 @endsection
 

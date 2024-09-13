@@ -9,8 +9,11 @@ class PageController extends Controller
 {
     public function index()
     {
-        $trains;
-        return view('home');
+        $trains = Train::all();
+
+        return view('home', [
+            'trains' => $trains,
+        ]);
     }
 
     public function page()
