@@ -9,6 +9,7 @@ class PageController extends Controller
 {
     public function index()
     {
+        $trains;
         return view('home');
     }
 

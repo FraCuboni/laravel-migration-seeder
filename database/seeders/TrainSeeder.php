@@ -20,8 +20,8 @@ class TrainSeeder extends Seeder
             $train->compagnia = $faker->randomElement(['italo', 'trenitalia', 'trenord']);
             $train->stazione_partenza = $faker->randomElement(['Roma termini', 'Torino Porta nuova', 'Torino Porta Susa', 'Milano', 'Bari', 'Aosta']);
             $train->stazione_arrivo = $faker->randomElement(['Roma termini', 'Torino Porta nuova', 'Torino Porta Susa', 'Milano', 'Bari', 'Aosta']);
-            $train->orario_partenza = $faker->time();
-            $train->orario_arrivo = $faker->time();
+            $train->orario_partenza = $faker->time('H:i:s');
+            $train->orario_arrivo = $faker->time('H:i:s');
             $train->codice_treno = $faker->numberBetween(3, 10);
             $train->numero_carrozze = $faker->numberBetween(3, 10);
             $train->in_orario = $faker->boolean();
