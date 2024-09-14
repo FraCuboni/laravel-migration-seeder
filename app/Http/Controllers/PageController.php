@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Train;
+use App\Models\Package;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -18,6 +19,10 @@ class PageController extends Controller
 
     public function page()
     {
-        return view('page');
+        $packages = Package::all();
+
+        return view('page', [
+            'packages' => $packages,
+        ]);
     }
 }

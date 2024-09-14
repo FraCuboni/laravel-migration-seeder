@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('azienda');
             $table->string('stazione_partenza');
             $table->string('stazione_arrivo');
-            $table->string('destinazione');
             $table->dateTime('data_partenza', $precision = 0);
             $table->dateTime('data_arrivo', $precision = 0);
             $table->float('prezzo', 8, 2);
